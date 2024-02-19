@@ -26,5 +26,10 @@ namespace UserInterFace.Forms
         {
             this.Close();
         }
+
+        private void frmActivition_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

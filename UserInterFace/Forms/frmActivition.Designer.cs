@@ -173,6 +173,7 @@
             this.Name = "frmActivition";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmActivition";
+            this.Load += new System.EventHandler(this.frmActivition_Load);
             this.statusFooter.ResumeLayout(false);
             this.statusFooter.PerformLayout();
             this.groupBox1.ResumeLayout(false);
