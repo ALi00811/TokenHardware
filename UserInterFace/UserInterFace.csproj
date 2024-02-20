@@ -61,6 +61,7 @@
     <Compile Include="Forms\frmActivition.Designer.cs">
       <DependentUpon>frmActivition.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetHash.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frmActivition.resx">

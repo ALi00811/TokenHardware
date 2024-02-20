@@ -10,7 +10,7 @@ namespace UserInterFace
 {
     public static class Controller
     {
-        private static string getHid()
+        public static string getHid()
         {
             string ProcessorId = string.Empty;
             ManagementClass mClass = new ManagementClass("win32_Processor");

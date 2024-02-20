@@ -12,14 +12,20 @@ namespace UserInterFace.Forms
 {
     public partial class frmActivition : Form
     {
+        public string Hid { get; } = Controller.getHid();
+        public string Sid { get; set; }
+
         public frmActivition()
         {
             InitializeComponent();
+            Sid = Controller.getSid(Hid);
+
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            var hash = new GetHash();
+            txtLicense.Text = Convert.ToBase64String(hash.computeHash((Encoding.UTF8.GetBytes(Hid))));
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -29,7 +35,7 @@ namespace UserInterFace.Forms
 
         private void frmActivition_Load(object sender, EventArgs e)
         {
-            
+            txtSID.Text = Sid;
         }
     }
 }
